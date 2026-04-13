@@ -33,7 +33,7 @@ As páginas `index.html`, `sobre-mim.html`, `projetos.html` e `contactos.html` s
 - **processing.html** → Projetos desenvolvidos em Processing (com canvas)
 
 ## Estrutura do Projeto
-![Estrutura](imagens/readme/estrutura.jpg)
+![Estrutura](img/readme/estrutura.jpg)
 ## Autor
 - Diana Marques
 
