@@ -92,6 +92,9 @@ iframe, video {
 body{
   font-size: 16px;
   font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.006rem;
+  line-height: 1.6;
 }
 
 /**************************************************
@@ -107,17 +110,37 @@ h1{
   font-size: 2.027rem;
   font-weight: 700;
   letter-spacing: 0.006rem;
-  line-height: 1.5rem;
+  line-height: 1.5; /*não tem unidade de medida*/
 }
 
 h2{
   font-size: 1.802rem;
   font-weight: 700;
-  line-height: 1.25rem;
+  line-height: 1.25;
 }
 
 h3{
   font-size: 1.602rem;
   font-weight: 700;
-  line-height: 1.25rem;
+  line-height: 1.25;
+}
+
+/**************************************************
+***************************************************
+*** DEFINIÇÃO DA TIPOGRAFIA PARA DESKTOP ***
+***************************************************
+***************************************************/
+
+@media (min-width: 992px) {
+  h1{
+  font-size: 5.61rem;
+}
+
+h2{
+  font-size: 4.209rem;
+}
+
+h3{
+  font-size: 3.157rem;
+}
 }
