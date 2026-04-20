@@ -1,6 +1,6 @@
 /*! NOTE: These are just recommended default global styles, edit as required */
 
-::selection { /* Optional */
+::selection { /* Opcional */
   /* It can be really hard to read highlighted text with a text-shadow, it should be removed when selected */
   text-shadow: none;
   
