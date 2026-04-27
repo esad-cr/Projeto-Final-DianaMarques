@@ -87,10 +87,11 @@ iframe, video {
 ***************************************************/
 
 :root{
-  --header-height: 3.5rem; /*variavel que determina a altura do header*/
+  --header-height: 4.5rem; /*variavel que determina a altura do header*/
   /*============================ COLORS =============================*/
   --background-nav-color: #1A0F0A;
-  --background-body-color: #F5EDE3;
+  /* --background-body-color: #F5EDE3; */
+  --background-body-color: #E8DDD4;
   --primary-color: #89C4E1;
   --secondary-color: #F5EDE3;
 
@@ -192,10 +193,13 @@ strong{
 ul {
   list-style: none;
 }
-a, #headerLogo a:hover { /* o Diana Marques do logo, continua clicavel, mas não tem hover */
+a, #headerLogo a:hover { /* o Diana Marques do logo, continua clicavel, mas não tem hover, é para retirar quando alterar pelo outro logo*/
   text-decoration: none;
   color: var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "Spectral", serif;
 }
+
 a:hover, a:active, a.active {
   color: var(--primary-color);
 }
@@ -295,4 +299,39 @@ a:hover, a:active, a.active {
 
 .nav__close {
   opacity: 0;
+}
+
+/* NAVEGAÇÃO PARA MOBILE */
+@media screen and (max-width: 992px){
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    width: 100%;
+    height: calc(100vh - 4.5rem);
+    overflow: auto;
+    /*pointer-events: none;
+    opacity: 0;*/
+    transition: top .4s, opacity .3s;
+  }
+}
+
+.nav__menu::-webkit-scrollbar {
+  width: 0;
+}
+
+.nav__list {
+  background-color: var(--background-nav-color);
+  padding-top: 1rem;
+}
+
+.nav__link {
+  color: var(--background-body-color);
+  background-color: var(--background-nav-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color .3s;
 }
