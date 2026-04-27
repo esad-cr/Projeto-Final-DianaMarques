@@ -194,7 +194,7 @@ ul {
 }
 a, #headerLogo a:hover { /* o Diana Marques do logo, continua clicavel, mas não tem hover */
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 a:hover, a:active, a.active {
   color: var(--primary-color);
@@ -245,4 +245,54 @@ a:hover, a:active, a.active {
   max-width: 1680px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.nav__burguer,
+.nav__close {
+  color: var(--primary-color);
+}
+
+.navAction {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headerLogo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+#headerLogo a {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+#headerLogo img {
+  width: 4rem;
+}
+
+.nav__toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav__burguer,
+.nav__close {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+}
+
+.nav__close {
+  opacity: 0;
 }
