@@ -85,6 +85,60 @@ iframe, video {
 *** O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ***
 ***************************************************
 ***************************************************/
+
+:root{
+  --header-height: 3.5rem; /*variavel que determina a altura do header*/
+  /*============================ COLORS =============================*/
+  --background-nav-color: #1A0F0A;
+  --background-body-color: #F5EDE3;
+  --primary-color: #89C4E1;
+  --secondary-color: #F5EDE3;
+
+  /* ESPESSURA DA FONTE */
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 800;
+
+  /* Z INDEX*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+}
+
+/************************************
+******** largura dos elemento *******
+******** que compoem o body *********
+*************************************/
+
+/* utilizando tags
+body header, body main, body footer {
+ width: 100%;
+ max-width: 1680px;
+ margin: 0 auto;
+ padding: 0 16px;
+}*/
+
+/* utilizando id 
+#topHeader, #mainContent, #mainFooter {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}*/
+
+/* utilizar classes, mas há mais 2 formas*/
+.pageWidth {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/**************************************************
+***************************************************
+******************* TIPOGRAFIA ********************
+***************************************************
+***************************************************/
 /* Importação da fonte */
 /* uma das maneiras de chamar a fonte*/
 /*@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');*/
@@ -95,6 +149,7 @@ body{
   font-weight: 400;
   letter-spacing: 0.006rem;
   line-height: 1.6;
+  background-color: var(--background-body-color);
 }
 
 /**************************************************
@@ -106,41 +161,88 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Spectral", serif;
 }
 
-h1{
+h1 {
   font-size: 2.027rem;
   font-weight: 700;
   letter-spacing: 0.006rem;
   line-height: 1.5; /*não tem unidade de medida*/
 }
 
-h2{
+h2 {
   font-size: 1.802rem;
   font-weight: 700;
   line-height: 1.25;
 }
 
-h3{
+h3 {
   font-size: 1.602rem;
   font-weight: 700;
   line-height: 1.25;
 }
 
-/**************************************************
-***************************************************
-*** DEFINIÇÃO DA TIPOGRAFIA PARA DESKTOP ***
-***************************************************
-***************************************************/
+p {
+  font-size: 1rem;
+}
+small {
+  font-size: 0.889rem;
+}
+strong{
+  font-weight: var(--font-bold);
+}
+ul {
+  list-style: none;
+}
+a, #headerLogo a:hover { /* o Diana Marques do logo, continua clicavel, mas não tem hover */
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+a:hover, a:active, a.active {
+  color: var(--primary-color);
+}
+/*******************************************************
+********************************************************
+*** DEFINIÇÃO DE TAMANHOS DA TIPOGRAFIA PARA DESKTOP ***
+********************************************************
+********************************************************/
 
 @media (min-width: 992px) {
-  h1{
+  h1 {
   font-size: 5.61rem;
 }
 
-h2{
+  h2 {
   font-size: 4.209rem;
 }
 
-h3{
+  h3 {
   font-size: 3.157rem;
 }
+}
+
+/*******************************************************
+********************************************************
+****************** MENU DE NAVEGAÇÃO *******************
+********************************************************
+********************************************************/
+
+
+/* ===================== HEADER =======================*/
+
+#topHeader {
+  position: fixed; /* menu fixo, sem scroll*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--background-nav-color);
+  box-shadow: 0 2px 16px var(--background-nav-color);
+  z-index: var(--z-fixed);
+}
+
+#mainMenu {
+  height: var(--header-height);
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
