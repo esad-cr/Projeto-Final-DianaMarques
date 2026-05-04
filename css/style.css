@@ -276,7 +276,7 @@ a:hover, a:active, a.active {
 }
 
 #headerLogo img {
-  width: 4rem;
+  width: 9rem;
 }
 
 .nav__toggle {
@@ -310,19 +310,19 @@ a:hover, a:active, a.active {
     width: 100%;
     height: calc(100vh - 4.5rem);
     overflow: auto;
-    /*pointer-events: none;
-    opacity: 0;*/
+    pointer-events: none;
+    opacity: 0;
     transition: top .4s, opacity .3s;
   }
-}
 
-.nav__menu::-webkit-scrollbar {
-  width: 0;
-}
 
-.nav__list {
-  background-color: var(--background-nav-color);
-  padding-top: 1rem;
+  .nav__menu::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .nav__list {
+    padding-top: 1rem;
+  }
 }
 
 .nav__link {
@@ -334,4 +334,40 @@ a:hover, a:active, a.active {
   justify-content: space-between;
   align-items: center;
   transition: background-color .3s;
+}
+
+/* NAVEGAÇÃO PARA TELAS GRANDES */
+@media screen and (min-width: 992px){
+  #topHeader {
+    margin-inline: auto;
+  }
+
+
+  #mainMenu {
+    height: calc(var(--header-height)+2rem)!important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  .nav__link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: 0.25rem;
+    background-color: transparent;
+  }
+
+  .nav__link:hover {
+    background-color: transparent;
+  }
 }
