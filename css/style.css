@@ -196,13 +196,31 @@ ul {
 a, #headerLogo a:hover { /* o Diana Marques do logo, continua clicavel, mas não tem hover, é para retirar quando alterar pelo outro logo*/
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Spectral", serif;
+  text-transform: uppercase;
 }
 
 a:hover, a:active, a.active {
   color: var(--primary-color);
 }
+/***************** Espaçar Elementos *******************/
+.space-S {
+  height: 30px;
+}
+
+.space-M {
+  height: 6cqb;
+}
+
+.space-L {
+  height: 90px;
+}
+
+.space-XL {
+  height: 120px;
+}
+
 /*******************************************************
 ********************************************************
 *** DEFINIÇÃO DE TAMANHOS DA TIPOGRAFIA PARA DESKTOP ***
@@ -212,15 +230,15 @@ a:hover, a:active, a.active {
 @media (min-width: 992px) {
   h1 {
   font-size: 5.61rem;
-}
+  }
 
   h2 {
   font-size: 4.209rem;
-}
+  }
 
   h3 {
   font-size: 3.157rem;
-}
+  }
 }
 
 /*******************************************************
@@ -315,7 +333,6 @@ a:hover, a:active, a.active {
     transition: top .4s, opacity .3s;
   }
 
-
   .nav__menu::-webkit-scrollbar {
     width: 0;
   }
@@ -335,8 +352,6 @@ a:hover, a:active, a.active {
   align-items: center;
   transition: background-color .3s;
 }
-
-
 
 /* Show menu */
 .show-menu {
@@ -360,7 +375,6 @@ a:hover, a:active, a.active {
   #topHeader {
     margin-inline: auto;
   }
-
 
   #mainMenu {
     height: calc(var(--header-height)+2rem)!important;
@@ -390,3 +404,26 @@ a:hover, a:active, a.active {
     background-color: transparent;
   }
 }
+
+
+/*******************************************************
+********************************************************
+********************* mainContent **********************
+********************************************************
+********************************************************/
+
+#mainContent {
+  margin-top: var(--header-height) !important;
+}
+
+@media screen and (min-width: 992px) {
+  #mainContent {
+    margin-top: calc(var(--header-height)+2rem);
+  }
+}
+
+/*******************************************************
+********************************************************
+********************** mainFooter **********************
+********************************************************
+********************************************************/
