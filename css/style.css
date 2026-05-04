@@ -424,6 +424,71 @@ a:hover, a:active, a.active {
 
 /*******************************************************
 ********************************************************
-********************** mainFooter **********************
+******************* hero 1 section *********************
 ********************************************************
 ********************************************************/
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-hero {
+  width: 60%;
+  z-index: var(--z-tooltip);
+}
+.right-hero {
+  width: 40%;
+  position: relative;
+}
+
+/* Navegação em dispositos mobile e tablet */
+@media screen  and (max-width: 992px) {
+  .left-hero {
+    width: 100%;
+  }
+
+  .right-hero {
+    display: none;
+  }
+}
+
+h1.heading-text {
+  color: var(--background-nav-color);
+  margin: 5rem 5.5rem 2rem 0;
+}
+
+h1.heading-text span {
+  color: var(--primary-color);
+}
+
+p.description {
+  color: var(--background-nav-color);
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  border: none;
+  color: var(--background-nav-color);
+  background-color: var(--primary-color);
+  padding: 1.25rem 2.5rem;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  border: 2.5px solid var(--background-nav-color);
+  background-color: var(--background-body-color);
+  cursor: pointer;
+}
+
+.banner-container:last-child {
+  margin-top: 5rem;
+}
+
+.banner-container div img {
+  max-width: 45vw;
+  position: absolute;
+  right: -16px;
+  transform: scaleX(-1);
+}
