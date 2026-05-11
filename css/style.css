@@ -89,7 +89,7 @@ iframe, video {
 :root{
   --header-height: 4.5rem; /*variavel que determina a altura do header*/
   /*============================ COLORS =============================*/
-  --background-nav-color: #1A0F0A;
+  --background-color: #1A0F0A;
   /* --background-body-color: #F5EDE3; */
   --background-body-color: #E8DDD4;
   --primary-color: #89C4E1;
@@ -150,7 +150,7 @@ body{
   font-weight: 400;
   letter-spacing: 0.006rem;
   line-height: 1.6;
-  background-color: var(--background-body-color);
+  background-color: var(--background-color);
 }
 
 /**************************************************
@@ -256,8 +256,8 @@ a:hover, a:active, a.active {
   left: 0;
   width: 100%;
   max-width: 100%;
-  background-color: var(--background-nav-color);
-  box-shadow: 0 2px 16px var(--background-nav-color);
+  background-color: var(--background-color);
+  box-shadow: 0 0 4px var(--secondary-color);
   z-index: var(--z-fixed);
 }
 
@@ -344,7 +344,7 @@ a:hover, a:active, a.active {
 
 .nav__link {
   color: var(--background-body-color);
-  background-color: var(--background-nav-color);
+  background-color: var(--background-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -420,6 +420,47 @@ a:hover, a:active, a.active {
   #mainContent {
     margin-top: calc(var(--header-height)+2rem);
   }
+}
+
+/*------------------------------------------------------
+------------------- Hero Section 2 ---------------------
+------------------------------------------------------*/
+.hero {
+  height: 90vh;
+  background-image: url('../img/teste2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.hero-heading {
+  width: 70%;
+  text-align: center;
+  line-height: 100px;
+  margin-top: 150px;
+  color: var(--primary-color);
+}
+
+.hero-description {
+  margin-top: 10px;
+  color: var(--secondary-color);
+}
+
+.button-large {
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.button-large:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 /*******************************************************
