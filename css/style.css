@@ -94,6 +94,7 @@ iframe, video {
   --background-body-color: #E8DDD4;
   --primary-color: #89C4E1;
   --secondary-color: #F5EDE3;
+  --third-color: #5b391d;
 
   /* ESPESSURA DA FONTE */
   --font-regular: 400;
@@ -240,6 +241,20 @@ a:hover, a:active, a.active {
   font-size: 3.157rem;
   }
 }
+
+/********* utilidades ********/
+.text_center {
+  text-align: center;
+}
+
+.white_text {
+  color: var(--background-nav-color);
+}
+
+.invert_filter {
+  filter: invert(.8);
+}
+
 
 /*******************************************************
 ********************************************************
@@ -419,6 +434,110 @@ a:hover, a:active, a.active {
 @media screen and (min-width: 992px) {
   #mainContent {
     margin-top: calc(var(--header-height)+2rem);
+  }
+}
+
+
+
+/*******************************************************
+************************ CARDS *************************
+********************************************************/
+
+/* Definir o flex/autolayout */
+
+.container {
+  --gap: 0;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+.box_shadow {
+  box-shadow: 3px 3px 15px 2px rgba(26, 15, 10, 0.5);
+}
+
+.border_radius {
+  border-radius: 8px;
+}
+
+.flex-column {
+  flex-direction: column;
+  margin-left: auto;
+}
+
+/* Definir os backgrounds colors */
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+}
+
+.bg-third-color {
+  background-color: var(--third-color);
+}
+
+/* Definir os backgrounds colors */
+
+.container article:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.container article:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.container article {
+  --gap: 2em;
+  line-height: 1.5;
+  padding: 3em;
+}
+
+.container article > img {
+  width: 4rem;
+}
+
+/***************** BOTÕES ***************/
+
+.learn-more-button {
+  border: none;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  padding-block: 0.79em;
+  padding-inline: 2.3em;
+  margin: auto;
+  margin-top: 3em;
+  transition: var(--background-nav-color) 200ms ease-in-out;
+}
+
+.learn-more-button:hover {
+  background-color: var(--background-body-color);
+  outline: 2px solid var(--background-nav-color);
+  color: var(--background-nav-color);
+}
+
+@media  screen and (max-width: 992px) {
+  .container .flex {
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 90%;
+  }
+  .container article:first-child {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .container article:last-child {
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 }
 
