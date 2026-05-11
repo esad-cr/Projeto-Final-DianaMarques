@@ -89,7 +89,7 @@ iframe, video {
 :root{
   --header-height: 4.5rem; /*variavel que determina a altura do header*/
   /*============================ COLORS =============================*/
-  --background-nav-color: #1A0F0A;
+  --background-color: #1A0F0A;
   /* --background-body-color: #F5EDE3; */
   --background-body-color: #E8DDD4;
   --primary-color: #89C4E1;
@@ -150,7 +150,7 @@ body{
   font-weight: 400;
   letter-spacing: 0.006rem;
   line-height: 1.6;
-  background-color: var(--background-body-color);
+  background-color: var(--background-color);
 }
 
 /**************************************************
@@ -256,8 +256,8 @@ a:hover, a:active, a.active {
   left: 0;
   width: 100%;
   max-width: 100%;
-  background-color: var(--background-nav-color);
-  box-shadow: 0 2px 16px var(--background-nav-color);
+  background-color: var(--background-color);
+  box-shadow: 0 0 4px var(--secondary-color);
   z-index: var(--z-fixed);
 }
 
@@ -454,7 +454,7 @@ a:hover, a:active, a.active {
 }
 
 h1.heading-text {
-  color: var(--background-nav-color);
+  color: var(--secondary-color);
   margin: 5rem 5.5rem 2rem 0;
 }
 
@@ -463,21 +463,22 @@ h1.heading-text span {
 }
 
 p.description {
-  color: var(--background-nav-color);
+  color: var(--secondary-color);
   font-size: 1.5rem;
   margin-bottom: 5rem;
 }
 
 .btn {
   border: none;
-  color: var(--background-nav-color);
+  color: var(--background-color);
   background-color: var(--primary-color);
   padding: 1.25rem 2.5rem;
   border-radius: 12px;
 }
 
 .btn:hover {
-  border: 2.5px solid var(--background-nav-color);
+  /*border: 2.5px solid var(--primary-color);*/
+  border: none;
   background-color: var(--background-body-color);
   cursor: pointer;
 }
@@ -491,4 +492,5 @@ p.description {
   position: absolute;
   right: -16px;
   transform: scaleX(-1);
+  height: 100%;
 }
