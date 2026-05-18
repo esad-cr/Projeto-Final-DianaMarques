@@ -132,7 +132,7 @@ body header, body main, body footer {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 /**************************************************
@@ -427,6 +427,93 @@ a:hover, a:active, a.active {
 
 /*******************************************************
 ********************************************************
+******************* hero 1 section *********************
+********************************************************
+********************************************************/
+
+.banner-container {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-hero {
+  width: 60%;
+  z-index: var(--z-tooltip);
+}
+.right-hero {
+  width: 40%;
+  position: relative;
+}
+
+p.description {
+  font-size: 20px;
+}
+
+/* Navegação em dispositos mobile e tablet */
+@media screen  and (max-width: 992px) {
+  .left-hero {
+    width: 60%;
+  }
+
+  .right-hero {
+    width: 40%;
+  }
+}
+
+h1.heading-text {
+  color: var(--secondary-color);
+  margin: 5rem 5.5rem 2rem 0;
+}
+
+h1.heading-text span {
+  color: var(--primary-color);
+}
+
+p.description {
+  color: var(--secondary-color);
+  margin-bottom: 45px;
+}
+
+.btn {
+  border: none;
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 35px;
+}
+
+.btn:hover {
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--background-color);
+  text-transform: none;
+}
+.btn:hover a {
+  border: none;
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+.banner-container:last-child {
+  margin-top: 80px;
+}
+
+.banner-container div img {
+  max-width: 45vw;
+  position: absolute;
+  right: -16px;
+  transform: scaleX(-1);
+  height: 100%;
+}
+
+/*******************************************************
+********************************************************
 ********************** mainFooter **********************
 ********************************************************
 ********************************************************/
+
