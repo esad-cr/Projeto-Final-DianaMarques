@@ -89,11 +89,11 @@ iframe, video {
 :root{
   --header-height: 4.5rem; /*variavel que determina a altura do header*/
   /*============================ COLORS =============================*/
-  --background-nav-color: #1A0F0A;
+  --background-color: #1A0F0A;
   /* --background-body-color: #F5EDE3; */
-  --background-body-color: #E8DDD4;
+  --secondary-color: #E8DDD4;
   --primary-color: #89C4E1;
-  --secondary-color: #F5EDE3;
+  /*--secondary-color: #F5EDE3;*/
 
   /* ESPESSURA DA FONTE */
   --font-regular: 400;
@@ -150,7 +150,8 @@ body{
   font-weight: 400;
   letter-spacing: 0.006rem;
   line-height: 1.6;
-  background-color: var(--background-body-color);
+  background-color: var(--background-color);
+  color: var(--secondary-color);
 }
 
 /**************************************************
@@ -256,8 +257,8 @@ a:hover, a:active, a.active {
   left: 0;
   width: 100%;
   max-width: 100%;
-  background-color: var(--background-nav-color);
-  box-shadow: 0 2px 16px var(--background-nav-color);
+  background-color: var(--background-color);
+  box-shadow: 0 0.5px 3px var(--secondary-color);
   z-index: var(--z-fixed);
 }
 
@@ -268,7 +269,7 @@ a:hover, a:active, a.active {
   margin: 0 auto;
   padding: 0 16px;
 }
-
+/* cor icon burguer menu e close*/
 .nav__burguer,
 .nav__close {
   color: var(--primary-color);
@@ -293,10 +294,12 @@ a:hover, a:active, a.active {
   column-gap: 1.5rem;
 }
 
+/*tamanho logo*/
 #headerLogo img {
   width: 9rem;
 }
 
+/*tamanho navbar*/
 .nav__toggle {
   position: relative;
   width: 32px;
@@ -343,8 +346,8 @@ a:hover, a:active, a.active {
 }
 
 .nav__link {
-  color: var(--background-body-color);
-  background-color: var(--background-nav-color);
+  color: var(--secondary-color);
+  background-color: var(--background-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
