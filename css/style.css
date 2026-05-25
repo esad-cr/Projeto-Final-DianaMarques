@@ -231,6 +231,7 @@ a:hover, a:active, a.active {
 @media (min-width: 992px) {
   h1 {
   font-size: 5.61rem;
+  line-height: 80px;
   }
 
   h2 {
@@ -258,7 +259,7 @@ a:hover, a:active, a.active {
   width: 100%;
   max-width: 100%;
   background-color: var(--background-color);
-  box-shadow: 0 0.5px 3px var(--secondary-color);
+  box-shadow: 0 1.5px 3px var(--secondary-color);
   z-index: var(--z-fixed);
 }
 
@@ -440,30 +441,20 @@ a:hover, a:active, a.active {
 .left-hero {
   width: 60%;
   z-index: var(--z-tooltip);
+  margin: 40px;
 }
 .right-hero {
   width: 40%;
   position: relative;
+  margin: 40px;
 }
 
 p.description {
   font-size: 20px;
 }
 
-/* Navegação em dispositos mobile e tablet */
-@media screen  and (max-width: 992px) {
-  .left-hero {
-    width: 60%;
-  }
-
-  .right-hero {
-    width: 40%;
-  }
-}
-
 h1.heading-text {
   color: var(--secondary-color);
-  margin: 5rem 5.5rem 2rem 0;
 }
 
 h1.heading-text span {
@@ -472,7 +463,7 @@ h1.heading-text span {
 
 p.description {
   color: var(--secondary-color);
-  margin-bottom: 45px;
+  margin: 45px 0px;
 }
 
 .btn {
@@ -481,6 +472,7 @@ p.description {
   background-color: var(--secondary-color);
   padding: 10px 20px;
   border-radius: 35px;
+  margin: 0px 15px;
 }
 
 .btn:hover {
@@ -507,9 +499,46 @@ p.description {
   max-width: 45vw;
   position: absolute;
   right: -16px;
-  transform: scaleX(-1);
-  height: 100%;
 }
+
+/* Navegação em dispositos mobile e tablet */
+@media screen  and (max-width: 992px) {
+  .left-hero {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .right-hero {
+    display: none;
+  }
+
+  h1.heading-text {
+  line-height: 1;
+}
+  p.description {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+.btn {
+  font-size: 14px;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.btn a {
+  font-size: 14px;
+}
+}
+
+/*------------------------ 
+----- Hero Section 2 -----
+------------------------*/
+
+
+
+
 
 /*******************************************************
 ********************************************************
