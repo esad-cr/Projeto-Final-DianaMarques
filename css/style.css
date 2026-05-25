@@ -167,7 +167,7 @@ h1 {
   font-size: 2.027rem;
   font-weight: 700;
   letter-spacing: 0.006rem;
-  line-height: 1.5; /*não tem unidade de medida*/
+  line-height: 1; /*não tem unidade de medida*/
 }
 
 h2 {
@@ -432,6 +432,8 @@ a:hover, a:active, a.active {
 ********************************************************
 ********************************************************/
 
+/*********************** DESKTOP ************************/
+
 .banner-container {
   height: 90vh;
   display: flex;
@@ -500,8 +502,7 @@ p.description {
   position: absolute;
   right: -16px;
 }
-
-/* Navegação em dispositos mobile e tablet */
+/*********************** MOBILE ************************/
 @media screen  and (max-width: 992px) {
   .left-hero {
     width: 100%;
@@ -512,13 +513,11 @@ p.description {
     display: none;
   }
 
-  h1.heading-text {
-  line-height: 1;
-}
   p.description {
   font-size: 16px;
   margin: 20px 0px;
 }
+
 .btn {
   font-size: 14px;
   margin: 5px 10px;
@@ -546,3 +545,70 @@ p.description {
 ********************************************************
 ********************************************************/
 
+#mainFooter {
+  border-top: 0 1.5px 3px var(--secondary-color);
+  margin-top: 60px;
+}
+
+.sectionFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 40px;
+}
+
+.footerLogo {
+  width: 7rem;
+}
+
+.contactos {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contactosList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleContactos {
+  color: var(--primary-color);
+}
+.contactosList a {
+  color: var(--secondary-color);
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.contactosList i {
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.contactosList a:hover {
+  color: var(--primary-color);
+}
+
+.bottomFooter {
+  padding: 20px;
+  text-align: center;
+}
+.bottomFooter p {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 992px){
+  .sectionFooter {
+  padding: 0px 40px;
+}
+  .footerLogo {
+    display: none;
+  }
+}
