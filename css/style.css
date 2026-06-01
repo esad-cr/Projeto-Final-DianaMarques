@@ -230,16 +230,16 @@ a:hover, a:active, a.active {
 
 @media (min-width: 992px) {
   h1 {
-  font-size: 5.61rem;
+  font-size: 3.815rem;
   line-height: 80px;
   }
 
   h2 {
-  font-size: 4.209rem;
+  font-size: 3.052rem;
   }
 
   h3 {
-  font-size: 3.157rem;
+  font-size: 2.441rem;
   }
 }
 
@@ -434,7 +434,7 @@ a:hover, a:active, a.active {
 
 /*********************** DESKTOP ************************/
 
-.hero {
+.hero1 {
     height: 91vh;
     background-image: url('../img/banner.JPG');
     background-repeat: no-repeat;
@@ -443,13 +443,13 @@ a:hover, a:active, a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 h1.heading-text {
     width: 70%;
     text-align: center;
     line-height: 100px;
-    margin-top: 150px;
     color: var(--background-color);
 }
 
@@ -462,7 +462,11 @@ p.description {
   color: var(--background-color);
   margin: 45px 0px;
 }
-
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
 .btn {
   border: none;
   color: var(--background-color);
@@ -490,14 +494,19 @@ p.description {
 
 /*********************** MOBILE ************************/
 @media screen  and (max-width: 992px) {
-
+  h1.heading-text {
+      width: 70%;
+      text-align: center;
+      line-height: 60px;
+      color: var(--background-color);
+  }
   p.description {
   font-size: 16px;
-  margin: 20px 0px;
+  margin: 20px 15px;
+  text-align: center;
   }
 
   .btn {
-    font-size: 14px;
     margin: 5px 10px;
     padding: 10px 15px;
     color: var(--secondary-color);
@@ -506,6 +515,7 @@ p.description {
 
   .btn a {
     font-size: 14px;
+    color: var(--secondary-color);
   }
 }
 
@@ -513,13 +523,11 @@ p.description {
 ----- Hero Section 2 -----
 ------------------------*/
 
-#sectionHero2 {
-  padding: 60px 0px;
-}
-
 .hero-heading {
   color: var(--secondary-color);
-  margin-bottom: 40px;
+  margin: 20px 0px;
+  padding-top: 25px;
+  padding-left: 20px;
 }
 
 .grelha {
@@ -527,15 +535,16 @@ p.description {
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   width: 100%;
+  padding: 0px;
 }
 
 .img-grelha {
-
+  line-height: 0;
 }
 
 .img-grelha img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
   display: block;
 }
@@ -544,6 +553,29 @@ p.description {
   transform: scale(1.05);
 }
 
+/*********************** MOBILE ************************/
+@media screen  and (max-width: 992px) {
+  .grelha {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-grelha {
+  line-height: 0;
+  height: 50vh;
+  }
+  .img-grelha img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero2 {
+    padding: 0px;
+  }
+  .hero-heading {
+  padding: 0px 20px;
+  margin-top: 30px;
+  }
+}
 /*******************************************************
 ********************************************************
 ********************** mainFooter **********************
@@ -557,9 +589,11 @@ p.description {
 
 .sectionFooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  padding: 0px 40px;
+  padding: 40px 40px;
+  margin-bottom: 40px;
+  gap: 40px;
 }
 
 .footerLogo {
@@ -612,8 +646,8 @@ p.description {
 @media screen and (max-width: 992px){
   .sectionFooter {
   padding: 0px 40px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
-  .footerLogo {
-    display: none;
-  }
 }
