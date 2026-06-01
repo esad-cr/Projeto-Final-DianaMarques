@@ -579,8 +579,7 @@ p.description {
 
 /******************************************************* GALERIA ******************************************************/
 /* fluid 4 columns */
-.grid-sizer,
-.grid-item { 
+.grid-sizer, .grid-item { 
   width: calc(25% - 10px);
   margin: 2px 5px;
 }
@@ -593,6 +592,21 @@ p.description {
 
 .galeria {
   margin: 20px;
+}
+
+.button-group button {
+  border: none;
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 35px;
+  margin: 0px 10px;
+}
+
+.button-group button:hover {
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
 
 @media  screen and (max-width: 992px) {
