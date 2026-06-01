@@ -12,3 +12,16 @@ const showMenu = (toggleId, navId) =>{
     })
 }
 showMenu('nav-toggle','navMenu')
+
+$('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-sizer',
+  gutter: 10,
+  percentPosition: true
+})
+
+const lightbox = GLightbox ({
+    loop : true
+})
