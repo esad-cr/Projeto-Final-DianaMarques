@@ -18,9 +18,30 @@ $('.grid').masonry({
   itemSelector: '.grid-item',
   // use element for option
   columnWidth: '.grid-sizer',
-  gutter: 10,
+  //gutter: 10,
+  horizontalOrder:true,
   percentPosition: true
 })
+
+var $grid = $('.grid').isotope({
+  // set itemSelector so .grid-sizer is not used in layout
+  //layoutMode: 'masonryHorizontal',
+  itemSelector: '.grid-item',
+  //selector
+  //layout
+  percentPosition: true,
+  masonryHorizontal: {
+    rowHeight: 10,
+    gutter: 0
+    //columnWidth: '.grid-sizer'
+  }
+})
+
+$('.filter-button-group').on('click','button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue});
+});
+
 
 const lightbox = GLightbox ({
     loop : true
