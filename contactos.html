@@ -62,8 +62,69 @@
         </header>
         <main id="mainContent">
         <!-- O conteúdo principal da página, exclusivo e central. Deve haver apenas um <main> por página. -->
-            <h1>Contactos</h1>
-            <h2>Artigo Principal</h2>
+            <section id="contactoHero">
+                <div class="contacto-container">
+                    <!-- Lado esquerdo -->
+                    <div class="contacto-left">
+                        <h1 class="contacto-titulo">Vamos criar juntos?</h1>
+                        <p class="contacto-descricao">Seja para retrato, produto ou colaboração, estou disponível para conversar.</p>
+                        <ul class="contacto-lista">
+                            <li>
+                                <a href="https://www.instagram.com/by_dimar/" target="_blank" rel="noopener noreferrer">
+                                    <i class="ri-instagram-fill"></i> @by_dimar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:dimar200031@gmail.com">
+                                    <i class="ri-mail-fill"></i> dimar200031@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Lado direito - Formulário -->
+                    <div class="contacto-form">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="">
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="">
+                        </div>
+                        <div class="campo">
+                            <label for="sessao">Tipo de Sessão</label>
+                            <input type="text" id="sessao" name="sessao" placeholder="">
+                        </div>
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                        </div>
+                        <div class="campo-enviar">
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero 2 Section -->
+            <section aria-label="hero" id="sectionHero2">
+                <div class="hero2">
+                    <h2 class="h2 hero-heading">No Instagram</h2>
+                    <div class="grelha">
+                        <div class="img-grelha">
+                            <img src="img/retrato/r3.JPG" alt="fotografia destaque 1">
+                        </div>
+                        <div class="img-grelha">
+                            <img src="img/produto/p3.JPG" alt="fotografia destaque 2">
+                        </div>
+                        <div class="img-grelha">
+                            <img src="img/retrato/r8.jpg" alt="fotografia destaque 3">
+                        </div>
+                        <div class="img-grelha">
+                            <img src="img/produto/car3.jpg" alt="fotografia destaque 4">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer id="mainFooter">
             <!-- Define o rodapé da página ou de uma secção. Contém informações como: Direitos de autor, contatos, links úteis e créditos -->

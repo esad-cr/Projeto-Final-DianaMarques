@@ -62,8 +62,44 @@
         </header>
         <main id="mainContent">
         <!-- O conteúdo principal da página, exclusivo e central. Deve haver apenas um <main> por página. -->
-            <h1>Sobre Mim</h1>
-            <h2>Artigo Principal</h2>
+            <section aria-label="banner" id="sectionHero1">
+                <div class="banner-container">
+                <!-- Left text -->
+                    <div class="left-hero">
+                        <img src="img/me.jpg" alt="Diana Marques" />
+                    </div>
+                    
+                    <!-- Right Text -->
+                    <div class="right-hero">
+                        <small>Sobre mim</small>
+                        <h1 class="h2 heading-text-sm">Diana Marques</h1>
+                        <p class="description-sm">
+                            Olá, sou a Diana. Tenho formação em Design Gráfico e Multimédia, mas a fotografia sempre esteve presente. 
+                            Foi nas cadeiras do curso que o fascínio cresceu, e a certa altura percebi que queria ir mais longe.
+                            Esse foi o passo que decidi dar e hoje fotografo retratos, produto e eventos, com a mesma atenção ao detalhe 
+                            que o design me ensinou a ter.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero 2 Section -->
+            <section aria-label="hero" id="sobreHero">
+                <div>
+                    <h2 class="h2 hero-heading-sm">Áreas de trabalho</h2>
+                </div>
+                <div class="hero2sm">
+                    <div class="grelha-sm">
+                        <div class="img-grelha-sm">
+                            <img src="img/retrato/r8.jpg" alt="fotografia retrato">
+                            <span class="legenda">Retrato</span>
+                        </div>
+                        <div class="img-grelha-sm">
+                            <img src="img/produto/p3.JPG" alt="fotografia produto">
+                            <span class="legenda">Produto</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer id="mainFooter">
             <!-- Define o rodapé da página ou de uma secção. Contém informações como: Direitos de autor, contatos, links úteis e créditos -->
