@@ -40,6 +40,7 @@ var $grid = $('.grid').isotope({
 $('.filter-button-group').on('click','button', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue});
+    //ativa o filtro
     $('.filter-button-group button').removeClass('active');
     $(this).addClass('active');
 });

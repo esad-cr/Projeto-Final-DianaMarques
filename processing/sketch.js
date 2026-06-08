@@ -178,8 +178,8 @@ function preload() {
 // Define configurações básicas como tamanho do canvas e fonte
 
 function setup() {
-var myCanvas = createCanvas(450, 450);
- myCanvas.parent("myP5");
+  createCanvas(450, 450);
+ 
 }
 
 // =====================================================
