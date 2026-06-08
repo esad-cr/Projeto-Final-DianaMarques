@@ -40,9 +40,20 @@ var $grid = $('.grid').isotope({
 $('.filter-button-group').on('click','button', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue});
+    $('.filter-button-group button').removeClass('active');
+    $(this).addClass('active');
 });
 
 
 const lightbox = GLightbox ({
     loop : true
 })
+
+// Aplica filtro se vier com hash na URL
+const hash = window.location.hash;
+if (hash) {
+    const filterValue = '.' + hash.replace('#', '');
+    $grid.isotope({ filter: filterValue });
+    $('.filter-button-group button').removeClass('active');
+    $(`.filter-button-group button[data-filter="${filterValue}"]`).addClass('active');
+}
