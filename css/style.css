@@ -434,22 +434,22 @@ a:hover, a:active, a.active {
 /*********************** DESKTOP ************************/
 
 .hero1 {
-    height: 91vh;
-    background-image: url('../img/banner.JPG');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position:top center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 91vh;
+  background-image: url('../img/banner.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1.heading-text {
-    width: 70%;
-    text-align: center;
-    line-height: 100px;
-    color: var(--background-color);
+  width: 70%;
+  text-align: center;
+  line-height: 100px;
+  color: var(--background-color);
 }
 
 p.description {
@@ -490,10 +490,10 @@ p.description {
 /*********************** MOBILE ************************/
 @media screen  and (max-width: 992px) {
   h1.heading-text {
-      width: 70%;
-      text-align: center;
-      line-height: 60px;
-      color: var(--background-color);
+    width: 70%;
+    text-align: center;
+    line-height: 60px;
+    color: var(--background-color);
   }
   p.description {
   font-size: 16px;
@@ -700,64 +700,69 @@ p.description {
 }
 
 .hero-heading-sm {
-    color: var(--primary-color);
-    padding: 30px 20px 20px 20px;
+  color: var(--primary-color);
+  padding: 30px 20px 20px 20px;
 }
 
 .grelha-sm {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: 100%;
 }
 
 .img-grelha-sm {
-    position: relative;
-    overflow: hidden;
-    line-height: 0;
-    height: 50vh;
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+  height: 50vh;
 }
 
 .img-grelha-sm img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
 .img-grelha-sm:hover img {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .legenda {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 35px 20px;
-    background: #1a0f0a90;
-    color: var(--secondary-color);
-    font-family: "Spectral", serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 35px 20px;
+  background: #1a0f0a90;
+  color: var(--secondary-color);
+  font-family: "Spectral", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 /* Mobile */
 @media screen and (max-width: 992px) {
-    .img-grelha-sm {
-        height: 50vw;
-    }
+  .img-grelha-sm {
+    height: 50vw;
+  }
 
-    .hero-heading-sm {
-        padding: 20px 20px 15px 20px;
-    }
+  .hero-heading-sm {
+    padding: 20px 20px 15px 20px;
+  }
+  .grelha-sm {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /******************************************************* PROCESSING ******************************************************/
-
+#myP5 canvas {
+  align-items: center;
+}
 
 /******************************************************* CONTACTOS ******************************************************/
 .contacto-container {
