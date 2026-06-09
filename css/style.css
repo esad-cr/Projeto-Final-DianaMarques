@@ -636,6 +636,7 @@ p.description {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .left-hero {
   width: 35%;
   aspect-ratio: 2 / 3;
@@ -764,13 +765,13 @@ p.description {
   flex-direction: column;
 }
 
-.left-hero {
+.left-hero-p {
   width: 60%;
   align-self: flex-start;
   overflow: hidden;
 }
 
-.right-hero {
+.right-hero-p {
   width: 40%;
   padding: 50px;
   display: flex;
@@ -788,11 +789,13 @@ p.description-p {
   font-size: 20px;
   color: var(--secondary-color);
   padding: 0px 25px;
+  text-align: justify;
 }
 li.description-p {
   font-size: 20px;
   color: var(--secondary-color);
   padding: 0px 25px;
+  text-align: justify;
 }
 
 li.description-p span{
@@ -800,7 +803,7 @@ li.description-p span{
 }
 
 #myP5 {
-  width: 100%;
+  width: 40%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -818,6 +821,14 @@ li.description-p span{
 @media screen and (max-width: 992px) {
   #myP5 canvas {
     margin-top: 10px;
+}
+  .left-hero-p {
+  width: 100%;
+}
+
+.right-hero-p {
+  width: 100%!important; 
+  padding: 30px 20px;
 }
 }
 
