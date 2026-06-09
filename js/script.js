@@ -45,7 +45,7 @@ $('.filter-button-group').on('click','button', function() {
     $(this).addClass('active');
 });
 
-
+//faz a janela de visualização das fotos
 const lightbox = GLightbox ({
     loop : true
 })
