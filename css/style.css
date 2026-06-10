@@ -659,6 +659,16 @@ p.description {
   justify-content: flex-start;
   gap: 20px;
 }
+.right-hero a {
+  color: var(--secondary-color);
+  font-size: 20px;
+  text-transform: lowercase;
+  
+}
+
+.right-hero a:hover {
+  color: var(--primary-color);
+}
 
 .heading-text-sm {
   color: var(--primary-color);
@@ -689,6 +699,12 @@ p.description {
   .right-hero {
     width: 100%;
     padding: 30px 20px;
+  }
+
+  .right-hero a {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-top: 10px;
   }
 }
 
@@ -872,7 +888,6 @@ li.description-p span{
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: color 0.2s;
 }
 
 .contacto-lista a:hover {
@@ -880,7 +895,7 @@ li.description-p span{
 }
 
 .contacto-lista i {
-  font-size: 1.1rem;
+  font-size: 18px;
 }
 
 /* Lado direito */
@@ -920,50 +935,53 @@ li.description-p span{
 }
 
 .campo input:focus, .campo textarea:focus {
-    border-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .campo-enviar {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-enviar {
-    background-color: var(--background-color);
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
-    padding: 10px 30px;
-    border-radius: 35px;
-    cursor: pointer;
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 10px 30px;
+  border-radius: 35px;
+  cursor: pointer;
 }
 
 .btn-enviar:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: var(--background-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--background-color);
 }
 
 /* Mobile */
 @media screen and (max-width: 992px) {
-    .contacto-container {
-        flex-direction: column;
-    }
+  .contacto-container {
+      flex-direction: column;
+  }
 
-    .contacto-left {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #e8ddd4a4;
-        padding: 40px 20px;
-    }
+  .contacto-left {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #e8ddd4a4;
+      padding: 40px 20px;
+  }
+  .contacto-lista a {
+    color: var(--primary-color);
+  }
 
-    .contacto-form {
-        width: 100%;
-        padding: 40px 20px;
-    }
+  .contacto-form {
+      width: 100%;
+      padding: 40px 20px;
+  }
 
-    .contacto-titulo {
-        font-size: 1.8rem;
-    }
+  .contacto-titulo {
+      font-size: 1.8rem;
+  }
 }
 
 
