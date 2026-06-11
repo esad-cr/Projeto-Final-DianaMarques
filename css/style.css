@@ -421,9 +421,9 @@ a:hover, a:active, a.active {
 }
 
 @media screen and (min-width: 992px) {
-  #mainContent {
-    margin-top: calc(var(--header-height)+2rem);
-  }
+#mainContent {
+  margin-top: calc(var(--header-height)+2rem);
+}
 }
 /******************************************************* INICIO ******************************************************/
 
@@ -457,11 +457,13 @@ p.description {
   color: var(--background-color);
   margin: 45px 0px;
 }
+
 .btns {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
+
 .btn {
   border: none;
   color: var(--background-color);
@@ -481,6 +483,7 @@ p.description {
   color: var(--background-color);
   text-transform: none;
 }
+
 .btn:hover a {
   border: none;
   text-decoration: none;
@@ -489,29 +492,29 @@ p.description {
 
 /*********************** MOBILE ************************/
 @media screen  and (max-width: 992px) {
-  h1.heading-text {
-    width: 70%;
-    text-align: center;
-    line-height: 60px;
-    color: var(--background-color);
-  }
-  p.description {
+h1.heading-text {
+  width: 70%;
+  text-align: center;
+  line-height: 60px;
+  color: var(--background-color);
+}
+p.description {
   font-size: 16px;
   margin: 20px 15px;
   text-align: center;
-  }
+}
 
-  .btn {
-    margin: 5px 10px;
-    padding: 10px 15px;
-    color: var(--secondary-color);
-    background-color: var(--background-color);
-  }
+.btn {
+  margin: 5px 10px;
+  padding: 10px 15px;
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+}
 
-  .btn a {
-    font-size: 14px;
-    color: var(--secondary-color);
-  }
+.btn a {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
 }
 
 /*------------------------ 
@@ -550,30 +553,30 @@ p.description {
 
 /*********************** MOBILE ************************/
 @media screen  and (max-width: 992px) {
-  .grelha {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .img-grelha {
+.grelha {
+  grid-template-columns: repeat(2, 1fr);
+}
+.img-grelha {
   line-height: 0;
   height: 50vh;
-  }
-  .img-grelha img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .hero2 {
-    padding: 0px;
-  }
-  .hero-heading {
+}
+.img-grelha img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hero2 {
+  padding: 0px;
+}
+.hero-heading {
   padding: 0px 20px;
   margin-top: 30px;
-  }
+}
 }
 
 /******************************************************* GALERIA ******************************************************/
-/* fluid 4 columns */
+/* fluid 4 columns - isotope */
 .grid-sizer, .grid-item { 
   width: calc(25% - 10px);
   margin: 2px 5px;
@@ -614,15 +617,15 @@ p.description {
 }
 
 @media  screen and (max-width: 992px) {
-  .grid-sizer, .grid-item { 
+.grid-sizer, .grid-item { 
   width: calc(33.33% - 10px);
   margin-bottom: 5px;
-  }
-  .button-group button {
-    font-size: 14px;
-    margin: 5px 10px;
-    padding: 10px 15px;
-  }
+}
+.button-group button {
+  font-size: 14px;
+  margin: 5px 10px;
+  padding: 10px 15px;
+}
 }
 
 /******************************************************* SOBRE ******************************************************/
@@ -659,11 +662,11 @@ p.description {
   justify-content: flex-start;
   gap: 20px;
 }
+
 .right-hero a {
   color: var(--secondary-color);
   font-size: 20px;
   text-transform: lowercase;
-  
 }
 
 .right-hero a:hover {
@@ -687,25 +690,25 @@ p.description {
 }
 
 @media screen and (max-width: 992px) {
-  .banner-container {
-    flex-direction: column;
-  }
+.banner-container {
+  flex-direction: column;
+}
 
-  .left-hero {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-  }
+.left-hero {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
 
-  .right-hero {
-    width: 100%;
-    padding: 30px 20px;
-  }
+.right-hero {
+  width: 100%;
+  padding: 30px 20px;
+}
 
-  .right-hero a {
-    color: var(--primary-color);
-    font-size: 16px;
-    margin-top: 10px;
-  }
+.right-hero a {
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-top: 10px;
+}
 }
 
 /*------------------------ 
@@ -763,16 +766,17 @@ p.description {
 
 /* Mobile */
 @media screen and (max-width: 992px) {
-  .img-grelha-sm {
-    height: 50vw;
-  }
+.img-grelha-sm {
+  height: 50vw;
+}
 
-  .hero-heading-sm {
-    padding: 20px 20px 15px 20px;
-  }
-  .grelha-sm {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.hero-heading-sm {
+  padding: 20px 20px 15px 20px;
+}
+
+.grelha-sm {
+  grid-template-columns: repeat(1, 1fr);
+}
 }
 
 /******************************************************* PROCESSING ******************************************************/
@@ -835,10 +839,11 @@ li.description-p span{
 
 /* Mobile */
 @media screen and (max-width: 992px) {
-  #myP5 canvas {
-    margin-top: 10px;
+#myP5 canvas {
+  margin-top: 10px;
 }
-  .left-hero-p {
+
+.left-hero-p {
   width: 100%;
 }
 
@@ -960,28 +965,29 @@ li.description-p span{
 
 /* Mobile */
 @media screen and (max-width: 992px) {
-  .contacto-container {
-      flex-direction: column;
-  }
+.contacto-container {
+  flex-direction: column;
+}
 
-  .contacto-left {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid #e8ddd4a4;
-      padding: 40px 20px;
-  }
-  .contacto-lista a {
-    color: var(--primary-color);
-  }
+.contacto-left {
+  width: 100%;
+  border-right: none;
+  border-bottom: 1px solid #e8ddd4a4;
+  padding: 40px 20px;
+}
 
-  .contacto-form {
-      width: 100%;
-      padding: 40px 20px;
-  }
+.contacto-lista a {
+  color: var(--primary-color);
+}
 
-  .contacto-titulo {
-      font-size: 1.8rem;
-  }
+.contacto-form {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.contacto-titulo {
+  font-size: 1.8rem;
+}
 }
 
 
