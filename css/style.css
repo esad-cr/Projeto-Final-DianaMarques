@@ -955,6 +955,7 @@ li.description-p span{
   padding: 10px 30px;
   border-radius: 35px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .btn-enviar:hover {
