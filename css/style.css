@@ -813,18 +813,24 @@ h1.heading-text-p {
 p.description-p {
   font-size: 16px;
   color: var(--secondary-color);
-  padding: 0px 25px;
+  padding: 5px 25px;
   text-align: justify;
 }
 li.description-p {
   font-size: 16px;
   color: var(--secondary-color);
-  padding: 0px 25px;
+  padding: 2px 25px;
   text-align: justify;
 }
 
 li.description-p span{
   color: var(--primary-color);
+}
+
+li.description-p i{
+  color: var(--primary-color);
+  font-size: 22px;
+  margin-right: 5px;
 }
 
 #myP5 {
