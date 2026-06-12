@@ -833,6 +833,10 @@ li.description-p i{
   margin-right: 5px;
 }
 
+.left-hero-p small {
+  padding: 0px 25px;
+}
+
 #myP5 {
   width: 40%;
   height: auto;
