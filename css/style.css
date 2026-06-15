@@ -470,16 +470,26 @@ p.description {
 }
 
 .btn {
-  border: none;
+  border: 1px solid var(--secondary-color);
   color: var(--background-color);
   background-color: var(--secondary-color);
   padding: 10px 20px;
   border-radius: 35px;
   margin: 0px 15px;
+  min-width: 125px;
+}
+
+.sm {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.text-sm {
+  color: var(--secondary-color)!important;
 }
 
 .btn:hover {
-  border: none;
+  border: 1px solid var(--background-color);
   background-color: var(--background-color);
   cursor: pointer;
 }
@@ -943,7 +953,7 @@ li.description-p i{
   text-transform: none;
 }
 
-.campo input, .campo textarea {
+.campo input, .campo textarea, .campo select {
   background-color: var(--background-color);
   border: 1px solid #e8ddd4a4;
   border-radius: 4px;
@@ -956,7 +966,7 @@ li.description-p i{
   resize: none;
 }
 
-.campo input:focus, .campo textarea:focus {
+.campo input:focus, .campo textarea:focus, .campo select:focus {
   border-color: var(--primary-color);
 }
 
